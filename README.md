@@ -1,7 +1,5 @@
 
-# less-game (less-game) [![Build Status](https://travis-ci.org/less-game/frontend.svg)](https://travis-ci.org/less-game/frontend)
-
-> Like Chess but Less!
+# less-game [![Build Status](https://travis-ci.org/less-game/frontend.svg)](https://travis-ci.org/less-game/frontend)
 
 ## Running this project (for development)
 
