@@ -9,362 +9,110 @@
   width: $tile3-size;
   height: $tile3-size;
 
+  &.rotate90 {
+    transform: rotate(90deg);
+  }
+
+  &.rotate180 {
+    transform: rotate(180deg);
+  }
+
+  &.rotate270 {
+    transform: rotate(270deg);
+  }
+
   &.type1 {
-    &.rotate0 .field:nth-child(2) .borders {
+    .field:nth-child(2) .borders {
       margin-left: $border-margin;
       border-right-width: $border-width;
       border-bottom-width: $border-width;
       border-top-right-radius: $field-radius;
       border-bottom-right-radius: $field-radius;
-    }
-
-    &.rotate90 .field:nth-child(4) .borders {
-      margin-top: $border-margin;
-      margin-left: $border-margin;
-      border-bottom-width: $border-width;
-      border-left-width: $border-width;
-      border-bottom-left-radius: $field-radius;
-      border-bottom-right-radius: $field-radius;
-    }
-
-    &.rotate180 .field:nth-child(3) .borders {
-      margin-top: $border-margin;
-      border-top-width: $border-width;
-      border-left-width: $border-width;
-      border-top-left-radius: $field-radius;
-      border-bottom-left-radius: $field-radius;
-    }
-
-    &.rotate270 .field:nth-child(1) .borders {
-      border-top-width: $border-width;
-      border-right-width: $border-width;
-      border-top-left-radius: $field-radius;
-      border-top-right-radius: $field-radius;
     }
   }
 
   &.type2 {
-    &.rotate0 .field:nth-child(2) .borders {
+    .field:nth-child(2) .borders {
       margin-left: $border-margin;
       border-top-width: $border-width;
       border-left-width: $border-width;
       border-top-left-radius: $field-radius;
       border-top-right-radius: $field-radius;
-    }
-
-    &.rotate90 .field:nth-child(4) .borders {
-      margin-top: $border-margin;
-      margin-left: $border-margin;
-      border-top-width: $border-width;
-      border-right-width: $border-width;
-      border-top-right-radius: $field-radius;
-      border-bottom-right-radius: $field-radius;
-    }
-
-    &.rotate180 .field:nth-child(3) .borders {
-      margin-top: $border-margin;
-      border-right-width: $border-width;
-      border-bottom-width: $border-width;
-      border-bottom-left-radius: $field-radius;
-      border-bottom-right-radius: $field-radius;
-    }
-
-    &.rotate270 .field:nth-child(1) .borders {
-      border-bottom-width: $border-width;
-      border-left-width: $border-width;
-      border-top-left-radius: $field-radius;
-      border-bottom-left-radius: $field-radius;
     }
   }
 
   &.type3 {
-    &.rotate0 .field:nth-child(2) .borders {
+    .field:nth-child(2) .borders {
       margin-left: $border-margin;
       border-bottom-width: $border-width;
       border-left-width: $border-width;
       border-bottom-left-radius: $field-radius;
-    }
-
-    &.rotate90 .field:nth-child(4) .borders {
-      margin-top: $border-margin;
-      margin-left: $border-margin;
-      border-top-width: $border-width;
-      border-left-width: $border-width;
-      border-top-left-radius: $field-radius;
-    }
-
-    &.rotate180 .field:nth-child(3) .borders {
-      margin-top: $border-margin;
-      border-top-width: $border-width;
-      border-right-width: $border-width;
-      border-top-right-radius: $field-radius;
-    }
-
-    &.rotate270 .field:nth-child(1) .borders {
-      border-right-width: $border-width;
-      border-bottom-width: $border-width;
-      border-bottom-right-radius: $field-radius;
     }
   }
 
   &.type4 {
-    &.rotate0 .field:nth-child(2) .borders {
+    .field:nth-child(2) .borders {
       margin-left: $border-margin;
       border-right-width: $border-width;
       border-top-right-radius: $field-radius;
     }
-
-    &.rotate90 .field:nth-child(4) .borders {
-      margin-top: $border-margin;
-      margin-left: $border-margin;
-      border-bottom-width: $border-width;
-      border-bottom-right-radius: $field-radius;
-    }
-
-    &.rotate180 .field:nth-child(3) .borders {
-      margin-top: $border-margin;
-      border-left-width: $border-width;
-      border-bottom-left-radius: $field-radius;
-    }
-
-    &.rotate270 .field:nth-child(1) .borders {
-      border-top-width: $border-width;
-      border-top-left-radius: $field-radius;
-    }
   }
 
   &.type5 {
-    &.rotate0 {
-      .field:nth-child(2),
-      .field:nth-child(4) {
-        .borders {
-          margin-left: $border-margin;
-          border-right-width: $border-width;
-        }
-      }
-
-      .field:nth-child(2) .borders {
-        border-top-right-radius: $field-radius;
-      }
-
-      .field:nth-child(4) .borders {
-        margin-top: $border-margin;
-        border-bottom-right-radius: $field-radius;
-      }
-    }
-
-    &.rotate90 {
-      .field:nth-child(3),
-      .field:nth-child(4) {
-        .borders {
-          border-bottom-width: $border-width;
-        }
-      }
-
-      .field:nth-child(3) .borders {
-        margin-top: $border-margin;
-        border-bottom-left-radius: $field-radius;
-      }
-
-      .field:nth-child(4) .borders {
-        margin-top: $border-margin;
+    .field:nth-child(2),
+    .field:nth-child(4) {
+      .borders {
         margin-left: $border-margin;
-        border-bottom-right-radius: $field-radius;
+        border-right-width: $border-width;
       }
     }
 
-    &.rotate180 {
-      .field:nth-child(1),
-      .field:nth-child(3) {
-        .borders {
-          border-left-width: $border-width;
-        }
-      }
-
-      .field:nth-child(1) .borders {
-        border-top-left-radius: $field-radius;
-      }
-
-      .field:nth-child(3) .borders {
-        margin-top: $border-margin;
-        border-bottom-left-radius: $field-radius;
-      }
+    .field:nth-child(2) .borders {
+      border-top-right-radius: $field-radius;
     }
 
-    &.rotate270 {
-      .field:nth-child(1),
-      .field:nth-child(2) {
-        .borders {
-          border-top-width: $border-width;
-        }
-      }
-
-      .field:nth-child(1) .borders {
-        border-top-left-radius: $field-radius;
-      }
-
-      .field:nth-child(2) .borders {
-        margin-left: $border-margin;
-        border-top-right-radius: $field-radius;
-      }
+    .field:nth-child(4) .borders {
+      margin-top: $border-margin;
+      border-bottom-right-radius: $field-radius;
     }
   }
 
   &.type6 {
-    &.rotate0 {
-      .field:nth-child(2),
-      .field:nth-child(4) {
-        .borders {
-          margin-left: $border-margin;
-          border-right-width: $border-width;
-        }
-      }
-
-      .field:nth-child(2) .borders {
-        border-bottom-width: $border-width;
-        border-top-right-radius: $field-radius;
-      }
-
-      .field:nth-child(4) .borders {
-        margin-top: $border-margin;
-        border-bottom-right-radius: $field-radius;
-      }
-    }
-
-    &.rotate90 {
-      .field:nth-child(3),
-      .field:nth-child(4) {
-        .borders {
-          border-bottom-width: $border-width;
-        }
-      }
-
-      .field:nth-child(3) .borders {
-        margin-top: $border-margin;
-        border-right-width: $border-width;
-        border-bottom-left-radius: $field-radius;
-      }
-
-      .field:nth-child(4) .borders {
-        margin-top: $border-margin;
+    .field:nth-child(2),
+    .field:nth-child(4) {
+      .borders {
         margin-left: $border-margin;
-        border-bottom-right-radius: $field-radius;
-      }
-    }
-
-    &.rotate180 {
-      .field:nth-child(1),
-      .field:nth-child(3) {
-        .borders {
-          border-left-width: $border-width;
-        }
-      }
-
-      .field:nth-child(1) .borders {
-        border-bottom-width: $border-width;
-        border-top-left-radius: $field-radius;
-      }
-
-      .field:nth-child(3) .borders {
-        margin-top: $border-margin;
-        border-bottom-left-radius: $field-radius;
-      }
-    }
-
-    &.rotate270 {
-      .field:nth-child(1),
-      .field:nth-child(2) {
-        .borders {
-          border-top-width: $border-width;
-        }
-      }
-
-      .field:nth-child(1) .borders {
         border-right-width: $border-width;
-        border-top-left-radius: $field-radius;
       }
+    }
 
-      .field:nth-child(2) .borders {
-        margin-left: $border-margin;
-        border-top-right-radius: $field-radius;
-      }
+    .field:nth-child(2) .borders {
+      border-bottom-width: $border-width;
+      border-top-right-radius: $field-radius;
+    }
+
+    .field:nth-child(4) .borders {
+      margin-top: $border-margin;
+      border-bottom-right-radius: $field-radius;
     }
   }
 
   &.type7 {
-    &.rotate0 {
-      .field:nth-child(2) .borders {
-        margin-left: $border-margin;
-        border-bottom-width: $border-width;
-        border-left-width: $border-width;
-        border-bottom-left-radius: $field-radius;
-        width: $border-size - $border-ztile-sub-size;
-      }
-
-      .field:nth-child(4) .borders {
-        margin-top: $border-margin - $border-ztile-add-size;
-        margin-left: $border-margin;
-        border-right-width: $border-width;
-        border-top-right-radius: $field-radius;
-        border-bottom-right-radius: $field-radius;
-        height: $border-size + $border-ztile-add-size;
-      }
+    .field:nth-child(2) .borders {
+      margin-left: $border-margin;
+      border-bottom-width: $border-width;
+      border-left-width: $border-width;
+      border-bottom-left-radius: $field-radius;
+      width: $border-size - $border-ztile-sub-size;
     }
 
-    &.rotate90 {
-      .field:nth-child(4) .borders {
-        margin-top: $border-margin;
-        margin-left: $border-margin - $border-ztile-add-size;
-        border-top-width: $border-width;
-        border-top-left-radius: $field-radius;
-        width: $border-size + $border-ztile-add-size;
-      }
-
-      .field:nth-child(3) .borders {
-        margin-top: $border-ztile-sub-size / 3;
-        border-right-width: $border-width;
-        border-bottom-width: $border-width;
-        border-bottom-left-radius: $field-radius;
-        border-bottom-right-radius: $field-radius;
-        height: $border-size - $border-ztile-sub-size;
-      }
-    }
-
-    &.rotate180 {
-      .field:nth-child(3) .borders {
-        margin-top: $border-margin;
-        margin-left: $border-ztile-sub-size;
-        border-top-width: $border-width;
-        border-right-width: $border-width;
-        border-top-right-radius: $field-radius;
-        width: $border-size - $border-ztile-sub-size;
-      }
-
-      .field:nth-child(1) .borders {
-        border-left-width: $border-width;
-        border-top-left-radius: $field-radius;
-        border-bottom-left-radius: $field-radius;
-        height: $border-size + $border-ztile-add-size - .5%;
-      }
-    }
-
-    &.rotate270 {
-      .field:nth-child(1) .borders {
-        margin-top: $border-ztile-sub-size;
-        border-right-width: $border-width;
-        border-bottom-width: $border-width;
-        border-bottom-right-radius: $field-radius;
-        height: $border-size - $border-ztile-sub-size;
-      }
-
-      .field:nth-child(2) .borders {
-        margin-left: $border-margin - $border-ztile-add-size;
-        border-top-width: $border-width;
-        border-top-left-radius: $field-radius;
-        border-top-right-radius: $field-radius;
-        border-bottom-left-radius: $field-radius;
-        width: $border-size + $border-ztile-add-size;
-      }
+    .field:nth-child(4) .borders {
+      margin-top: $border-margin - $border-ztile-add-size;
+      margin-left: $border-margin;
+      border-right-width: $border-width;
+      border-top-right-radius: $field-radius;
+      border-bottom-right-radius: $field-radius;
+      height: $border-size + $border-ztile-add-size;
     }
   }
 }
