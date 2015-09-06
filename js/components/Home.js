@@ -18,6 +18,7 @@ class Home extends Component {
                 {e.map(() => {
                   return (
                     <div className={styles.field}>
+                      <div className={`${styles.player} ${Math.random() > 0.5 ? styles.white : styles.black}`}></div>
                       <div className={styles.borders}></div>
                     </div>
                   );

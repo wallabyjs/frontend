@@ -1,6 +1,7 @@
 @import 'variables';
 
 .field {
+  position: relative;
   float: left;
   margin-right: $field-margin;
   margin-bottom: $field-margin;

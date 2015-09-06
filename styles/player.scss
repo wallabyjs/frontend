@@ -1,0 +1,19 @@
+@import 'variables';
+
+.field .player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -28%;
+  border-radius: 100%;
+  width: 56%;
+  height: 56%;
+
+  &.white {
+    background: $player-white-color;
+  }
+
+  &.black {
+    background: $player-black-color;
+  }
+}
