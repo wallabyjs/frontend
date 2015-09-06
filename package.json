@@ -16,6 +16,7 @@
     "lint": "eslint .",
     "test:dev": "mocha --compilers js:babel/register -r chai -R min --watch",
     "test": "npm run lint && mocha --compilers js:babel/register -r chai",
+    "coverage": "istanbul cover _mocha -- --compilers js:babel/register"
   },
   "devDependencies": {
     "babel": "^5.8.23",
@@ -28,6 +29,7 @@
     "eslint-config-airbnb": "0.0.8",
     "eslint-plugin-react": "^3.3.0",
     "extract-text-webpack-plugin": "^0.8.2",
+    "istanbul": "^0.3.18",
     "jsx-loader": "^0.13.2",
     "mocha": "^2.2.5",
     "node-sass": "^3.2.0",
