@@ -13,9 +13,9 @@
   "scripts": {
     "start": "DEBUG=true node server.js",
     "build": "webpack -p",
-    "lint": "./node_modules/.bin/eslint .",
+    "lint": "eslint .",
     "test:dev": "mocha --compilers js:babel/register -r chai -R min --watch",
-    "test": "npm run lint && mocha --compilers js:babel/register -r chai"
+    "test": "npm run lint && mocha --compilers js:babel/register -r chai",
   },
   "devDependencies": {
     "babel": "^5.8.23",
