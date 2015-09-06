@@ -1,5 +1,14 @@
-.text {
-  color: #00c;
-  font-size: 2rem;
-  line-height: 1.5;
+@import 'variables';
+@import 'tile';
+@import 'field';
+
+main {
+  margin: 0 auto;
+  width: $board-wrapper-size;
+  height: $board-wrapper-size;
+}
+
+.board {
+  width: $board-size;
+  height: $board-size;
 }

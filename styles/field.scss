@@ -1,0 +1,49 @@
+@import 'variables';
+
+.field {
+  float: left;
+  margin-right: $field-margin;
+  margin-bottom: $field-margin;
+  border-width: 0;
+  border-style: solid;
+  border-color: $tile-color;
+  background: $field-color;
+  width: 50%;
+  height: 50%;
+  box-sizing: border-box;
+
+  &:nth-child(1) {
+    border-right-width: $field-border-width;
+    border-bottom-width: $field-border-width;
+    border-top-left-radius: $field-radius;
+  }
+
+  &:nth-child(2) {
+    border-bottom-width: $field-border-width;
+    border-left-width: $field-border-width;
+    border-top-right-radius: $field-radius;
+  }
+
+  &:nth-child(3) {
+    border-top-width: $field-border-width;
+    border-right-width: $field-border-width;
+    border-bottom-left-radius: $field-radius;
+  }
+
+  &:nth-child(4) {
+    border-top-width: $field-border-width;
+    border-left-width: $field-border-width;
+    border-bottom-right-radius: $field-radius;
+  }
+
+  .borders {
+    position: relative;
+    z-index: 2;
+    border-width: 0;
+    border-style: solid;
+    border-color: $border-color;
+    width: $border-size;
+    height: $border-size;
+    box-sizing: border-box;
+  }
+}

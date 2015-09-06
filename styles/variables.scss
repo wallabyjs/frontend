@@ -1,0 +1,27 @@
+// Board
+$board-wrapper-size: 800px;
+$board-size: 100%;
+$board-color: #777;
+
+// Tile
+$tile3-size: $board-size / 3.15;
+
+// $tile3-margin: ($board-size / 3 - $tile3-size) * 1.0;
+$tile3-margin: 5px;
+$tile-color: #bdc0c2;
+$tile-shadow: 0 1px 6px 0 rgba(0, 0, 0, .3);
+
+// Filed
+$field-size: 100% / 2.05;
+$field-margin: 0;
+$field-color: #e8e8e8;
+$field-radius: 16px;
+$field-border-width: 2.5px;
+
+// Borders
+$border-color: #069fd6;
+$border-width: 25px;
+$border-size: 110%;
+$border-margin: (100% - $border-size);
+$border-ztile-add-size: 3.5%;
+$border-ztile-sub-size: 15%;
