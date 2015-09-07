@@ -8,7 +8,7 @@ import Player, {PlayerPositions} from '../shared/player';
 
 const players = [
   new Player(PlayerPositions.player1, styles.white),
-  new Player(PlayerPositions.player2, styles.black)
+  new Player(PlayerPositions.player2, styles.black),
 ];
 
 class Home extends Component {
