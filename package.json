@@ -14,8 +14,8 @@
     "start": "DEBUG=true node server.js",
     "build": "webpack -p",
     "lint": "eslint .",
-    "test:dev": "mocha --compilers js:babel/register -r chai -R min --watch",
-    "test": "npm run lint && mocha --compilers js:babel/register -r chai",
+    "test:dev": "mocha -R min --watch",
+    "test": "npm run lint && mocha",
     "coverage": "istanbul cover _mocha -- --compilers js:babel/register"
   },
   "devDependencies": {

@@ -1,0 +1,4 @@
+--compilers js:babel/register
+-r chai
+-r sinon
+--recursive
