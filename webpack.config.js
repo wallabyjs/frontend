@@ -24,13 +24,12 @@ module.exports = {
   ],
   module: {
     loaders: [
-      { test: /\.js$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/ },
       { test: /\.tsx?$/, loaders: ['react-hot', 'ts-loader'], exclude: /node_modules/ },
       { test: /\.scss$/, loader: 'style-loader!css-loader?module&sourceMap!cssnext-loader!sass?outputStyle=expanded' }
     ]
   },
   resolve: {
-    extensions: ['', '.ts', '.tsx', '.js', '.json' ]
+    extensions: ['', '.ts', '.tsx', '.js', '.json']
   },
   cssnext: {
     browsers: "last 2 versions",
