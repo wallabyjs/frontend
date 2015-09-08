@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": false,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "outDir": "dist",
+        "jsx": "react"
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "./**/*.tsx",
+        "!./node_modules/**/*.ts",
+        "!./node_modules/**/*.tsx"
+    ],
+    "files": [
+        "./test/shared/fixture-coordinate.ts",
+        "./test/shared/test-coordinate.ts",
+        "./test/shared/test-player.ts",
+        "./test/test-example.ts",
+        "./typings/chai/chai.d.ts",
+        "./typings/lodash/lodash.d.ts",
+        "./typings/mocha/mocha.d.ts",
+        "./typings/node/node.d.ts",
+        "./typings/react/react.d.ts",
+        "./typings/redux/redux.d.ts",
+        "./typings/sinon-chai/sinon-chai.d.ts",
+        "./typings/sinon/sinon.d.ts",
+        "./typings/tsd.d.ts",
+        "./src/actions/HomeActions.tsx",
+        "./src/components/Home.tsx",
+        "./src/constants/ActionTypes.tsx",
+        "./src/containers/App.tsx",
+        "./src/index.tsx",
+        "./src/reducers/Sample.tsx",
+        "./src/reducers/index.tsx",
+        "./src/shared/coordinate.tsx",
+        "./src/shared/player.tsx",
+        "./src/store/configureStore.tsx",
+        "./src/utils/devTools.tsx"
+    ]
+}
