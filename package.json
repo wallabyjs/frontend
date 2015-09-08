@@ -14,7 +14,7 @@
     "postinstall": "tsd reinstall --overwrite --save",
     "start": "DEBUG=true node server.js",
     "build": "webpack -p --bail",
-    "test:dev": "mocha -R min --watch",
+    "test:dev": "mocha -R min --watch --growl",
     "test": "mocha && npm run build",
     "coverage": "istanbul cover _mocha -- --compilers js:babel/register"
   },
@@ -26,6 +26,7 @@
     "css-loader": "^0.16.0",
     "cssnext-loader": "^1.0.1",
     "extract-text-webpack-plugin": "^0.8.2",
+    "growl": "^1.8.1",
     "istanbul": "^0.3.18",
     "jsx-loader": "^0.13.2",
     "mocha": "^2.2.5",
