@@ -13,9 +13,8 @@ if (__DEV__) {
   createStoreWithMiddleware = compose(
     (applyMiddleware(thunkMiddleware) as any),
     devTools(),
-    persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/)),
-    createStore
-  );
+    persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/))
+  )(createStore);
 } else {
   createStoreWithMiddleware = applyMiddleware(thunkMiddleware)(createStore);
 }
