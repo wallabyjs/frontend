@@ -17,10 +17,9 @@
         "!./node_modules/**/*.tsx"
     ],
     "files": [
-        "./test/shared/fixture-coordinate.ts",
-        "./test/shared/test-coordinate.ts",
-        "./test/shared/test-player.ts",
-        "./test/test-example.ts",
+        "./test/shared/fixture-coordinate.tsx",
+        "./test/shared/test-coordinate.tsx",
+        "./test/shared/test-player.tsx",
         "./typings/chai/chai.d.ts",
         "./typings/lodash/lodash.d.ts",
         "./typings/mocha/mocha.d.ts",
