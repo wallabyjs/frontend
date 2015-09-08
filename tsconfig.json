@@ -17,9 +17,6 @@
         "!./node_modules/**/*.tsx"
     ],
     "files": [
-        "./test/shared/fixture-coordinate.tsx",
-        "./test/shared/test-coordinate.tsx",
-        "./test/shared/test-player.tsx",
         "./typings/chai/chai.d.ts",
         "./typings/lodash/lodash.d.ts",
         "./typings/mocha/mocha.d.ts",
@@ -39,6 +36,9 @@
         "./src/shared/coordinate.tsx",
         "./src/shared/player.tsx",
         "./src/store/configureStore.tsx",
-        "./src/utils/devTools.tsx"
+        "./src/utils/devTools.tsx",
+        "./test/shared/fixture-coordinate.tsx",
+        "./test/shared/test-coordinate.tsx",
+        "./test/shared/test-player.tsx"
     ]
 }
