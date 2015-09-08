@@ -1,4 +1,3 @@
---compilers js:babel/register
 --compilers ts:typescript-node/register
 --compilers tsx:typescript-node/register
 -r chai
