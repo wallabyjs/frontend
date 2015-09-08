@@ -1,9 +1,9 @@
-import React, {Component, PropTypes} from 'react';
-import {connect} from 'react-redux';
+import * as React from 'react';
+const {connect} = require('react-redux');
 // import { DragSource } from 'react-dnd';
 // import {bindActionCreators} from 'redux';
 // import * as HomeActions from '../actions/HomeActions';
-import styles from '../../styles/app.scss';
+const styles = require('../../styles/app.scss');
 import Player, {PlayerPositions} from '../shared/player';
 
 const players = [
@@ -11,7 +11,15 @@ const players = [
   new Player(PlayerPositions.player2, styles.black),
 ];
 
-class Home extends Component {
+interface Props {
+  title: string;
+  dispatch: Function;
+  isDragging: boolean;
+  connectDragSource: Function;
+}
+
+class Home extends React.Component<Props, {}> {
+
   render() {
     // const {title, dispatch} = this.props;
     // const actions = bindActionCreators(HomeActions, dispatch);
@@ -38,11 +46,11 @@ class Home extends Component {
   }
 }
 
-Home.propTypes = {
-  title: PropTypes.string.isRequired,
-  dispatch: PropTypes.func.isRequired,
-  isDragging: PropTypes.bool.isRequired,
-  connectDragSource: PropTypes.func.isRequired,
-};
+// Home.PropTypes = {
+//   title: React.PropTypes.string.isRequired,
+//   dispatch: React.PropTypes.func.isRequired,
+//   isDragging: React.PropTypes.bool.isRequired,
+//   connectDragSource: React.PropTypes.func.isRequired,
+// };
 
 export default connect(state => state.Sample)(Home);

@@ -1,4 +1,5 @@
-import React from 'react';
+declare var __DEV__;
+import * as React from 'react';
 
 export function renderDevTools(store) {
   if (__DEV__) {

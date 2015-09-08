@@ -1,6 +1,9 @@
-import {createStore, applyMiddleware, combineReducers, compose} from 'redux';
-import thunkMiddleware from 'redux-thunk';
+declare var __DEV__;
+import {createStore, applyMiddleware, combineReducers} from 'redux';
+// import thunkMiddleware from 'redux-thunk';
 import * as reducers from '../reducers/index';
+const thunkMiddleware = require('redux-thunk');
+const {compose} = require('redux');
 
 let createStoreWithMiddleware;
 
@@ -8,7 +11,7 @@ let createStoreWithMiddleware;
 if (__DEV__) {
   const {devTools, persistState} = require('redux-devtools');
   createStoreWithMiddleware = compose(
-    applyMiddleware(thunkMiddleware),
+    (applyMiddleware(thunkMiddleware) as any),
     devTools(),
     persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/)),
     createStore
@@ -19,6 +22,6 @@ if (__DEV__) {
 
 const rootReducer = combineReducers(reducers);
 
-export default function configureStore(initialState) {
+export default function configureStore(initialState = undefined) {
   return createStoreWithMiddleware(rootReducer, initialState);
 }

@@ -2,12 +2,9 @@ import Coordinate from './coordinate';
 
 export default class Player {
 
-  constructor(pieces = [], cssClass = '') {
-    this.pieces = pieces;
-    this.cssClass = cssClass;
-  }
+  constructor(public pieces = [], public cssClass = '') {}
 
-  static isAnyAtCoordinate(players, coordinate, returnCallback = val => val) {
+  static isAnyAtCoordinate(players, coordinate, returnCallback = (val, player) => val) {
     // If coordinate argument is (i, j) point, convert it to (x, y) point object.
     const pos = coordinate.i !== undefined && coordinate.j !== undefined ? Coordinate.fromCounters(coordinate) : coordinate;
     for (const player of players) {
