@@ -2,3 +2,4 @@
 dist/**
 static/**
 node_modules/
+typings
