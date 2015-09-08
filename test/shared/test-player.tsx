@@ -1,7 +1,7 @@
-import chai from 'chai';
-import sinon from 'sinon';
+import * as chai from 'chai';
+import * as sinon from 'sinon';
 chai.use(require('sinon-chai'));
-import Player, {PlayerPositions} from '../../js/shared/player';
+import Player, {PlayerPositions} from '../../src/shared/player';
 
 chai.should();
 
