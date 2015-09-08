@@ -39,6 +39,8 @@
     "sinon": "^1.16.1",
     "sinon-chai": "^2.8.0",
     "style-loader": "^0.12.3",
+    "tslint": "^2.4.5",
+    "typescript": "^1.6.0-dev.20150908",
     "webpack": "^1.12.0",
     "webpack-dev-server": "^1.10.1"
   }
