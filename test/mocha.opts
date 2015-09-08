@@ -1,4 +1,5 @@
 --compilers js:babel/register
+--compilers ts:typescript-node/register
 -r chai
 -r sinon
 --recursive
