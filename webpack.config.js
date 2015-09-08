@@ -5,13 +5,11 @@ var devFlagPlugin = new webpack.DefinePlugin({
   __DEV__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
 });
 
-var x;
-
 module.exports = {
   entry: [
     'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
-    './js/index.js'
+    './src/index.tsx'
   ],
   output: {
     path: __dirname + '/static/',
@@ -27,11 +25,12 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.js$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/ },
+      { test: /\.tsx?$/, loaders: ['react-hot', 'ts-loader'], exclude: /node_modules/ },
       { test: /\.scss$/, loader: 'style-loader!css-loader?module&sourceMap!cssnext-loader!sass?outputStyle=expanded' }
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.json']
+    extensions: ['', '.ts', '.tsx', '.js', '.json' ]
   },
   cssnext: {
     browsers: "last 2 versions",
