@@ -1,5 +1,5 @@
-import chai from 'chai';
-import Coordinate from '../../js/shared/coordinate';
+import * as chai from 'chai';
+import Coordinate from '../../src/shared/coordinate';
 import fixture from './fixture-coordinate';
 
 chai.should();
