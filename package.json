@@ -13,9 +13,9 @@
   "scripts": {
     "postinstall": "tsd reinstall --overwrite --save",
     "start": "DEBUG=true node server.js",
-    "build": "webpack -p",
+    "build": "webpack -p --bail",
     "test:dev": "mocha -R min --watch",
-    "test": "mocha && webpack -p --bail",
+    "test": "mocha && npm run build",
     "coverage": "istanbul cover _mocha -- --compilers js:babel/register"
   },
   "devDependencies": {
