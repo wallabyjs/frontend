@@ -12,4 +12,8 @@ main {
 .board {
   width: $board-size;
   height: $board-size;
+
+  * {
+    user-select: none;
+  }
 }
