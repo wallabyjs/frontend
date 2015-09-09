@@ -39,7 +39,7 @@
 
   .borders {
     position: relative;
-    z-index: 2;
+    z-index: $border-z-index;
     border-width: 0;
     border-style: solid;
     border-color: $border-color;

@@ -4,7 +4,7 @@
 @import 'player';
 
 main {
-  margin: 0 auto;
+  margin: $board-margin;
   width: $board-wrapper-size;
   height: $board-wrapper-size;
 }

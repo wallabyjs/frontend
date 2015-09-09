@@ -1,5 +1,6 @@
 // Board
 $board-wrapper-size: 800px;
+$board-margin: 0 auto;
 $board-size: 100%;
 $board-color: #777;
 
@@ -20,10 +21,12 @@ $field-border-width: 2.5px;
 $border-color: #069fd6;
 $border-width: 25px;
 $border-size: 110%;
+$border-z-index: 2;
 $border-margin: (100% - $border-size);
 $border-ztile-add-size: 3.5%;
 $border-ztile-sub-size: 15%;
 
 // Player
+$player-size: 56%;
 $player-white-color: #dbb99c;
 $player-black-color: #635752;
