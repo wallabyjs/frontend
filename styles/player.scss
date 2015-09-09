@@ -10,6 +10,10 @@
   width: $player-size;
   height: $player-size;
 
+  &:hover {
+    transition: box-shadow .2s ease-out;
+    box-shadow: $player-hover-shadow;
+  }
 
   &.white {
     background-color: $player-white-color;
