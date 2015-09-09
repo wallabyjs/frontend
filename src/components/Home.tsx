@@ -31,9 +31,10 @@ class Home extends React.Component<Props, {}> {
             return (
               <div className={`${styles.tile} ${styles.rotate0} ${styles[`type${i}`] || ''}`}>
                 {e.map((_j, j) => {
+                  const playerStyle = Player.getStyleAtPosition(players, {i, j});
                   return (
                     <div className={styles.field}>
-                      <div className={`${styles.player} ${Player.getStyleAtPosition(players, {i, j})}`} />
+                      {playerStyle && <div className={`${styles.player} ${playerStyle}`} />}
                       <div className={styles.borders} />
                     </div>
                   );
